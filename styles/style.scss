@@ -1,0 +1,37 @@
+
+@import 'reset';
+@import 'variables';
+@import 'header';
+@import 'dashboard';
+body {
+  perspective: 1000px;
+background-image: url('/assets/images/background.jpg'); // relative path
+  background-size: cover; // makes it stretch and fill nicely
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Poppins', sans-serif;
+  padding: 3rem;
+  overflow: hidden ;
+ 
+}
+
+.wrapper {
+  border-radius: 6px;
+   height: calc(100vh - 6rem); 
+  background-color: $primary-color;  /// or SCSS: rgba(#fff, 0.2);
+  backdrop-filter: blur(15px); // ✅ Must specify the filter type
+  -webkit-backdrop-filter: blur(15px); // ✅ For Safari support
+  border: 1px solid $border-color; // Optional: nice frosted border
+  overflow-y: auto;
+  transition: all 1s ease;
+  opacity: 0;
+  animation: fadeIn 1s ease  forwards;
+  transform: rotateY(20deg) translateX(100px) scale(0);
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: rotateY(0deg) translateX(0) scale(1);
+  }
+}

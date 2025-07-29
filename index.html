@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaiming Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- header -->
+        <header>
+            <div class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <i class="fa-solid fa-house"></i>
+                    </li>
+                    <li class="menu__item">Properties list</li>
+                    <li class="menu__item">Analytics</li>
+                    <li class="menu__item">What is Horizion?</li>
+                    <li class="menu__item">Tool&Calculators</li>
+                </ul>
+                <!-- search input -->
+                <div class="menu__search">
+                    <div class="menu__search-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <input placeholder="barcelona" type="text" class="menu__search-input">
+                    <div class="menu__search-filter-icon">
+                        <i class="fa-solid fa-sliders"></i>
+                    </div>
+                </div>
+                <div class="profile">
+                    <div class="profile__icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <div class="avatar">
+                        <img src="/assets/images/avatar.jpg" alt="" class="avatar__img">
+                        <div class="avatar__info">
+                            <h4 class="avatar__title">Rebaz</h4>
+                            <p class="avatar__sub">admin</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <!-- dashboard -->
+        <main class="dashboard-container">
+            <div class="dashboard">
+
+                <div class="dashboard__left">
+                    <div class="dashboard__sections">
+                        <h3 class="dashboard__sections-title">Dashboard</h3>
+                        <div class="dashboard__sections-buttons">
+                            <button class="dashboard__sections-button">Properties</button>
+                            <button class="dashboard__sections-button">Appartments</button>
+                            <button class="dashboard__sections-button">Rentals</button>
+                        </div>
+                    </div>
+                    <div class="dashboard__summary">
+                        <div class="dashboard__summary-container">
+                            <div class="dashboard__summary-title">Properties visits</div>
+  <div class="dashboard__summary-wrap">
+                                <div class="dashboard__summary-number">367K</div>
+                                <div class="dashboard__summary-chip">+11.01%</div>
+                            </div>
+                        </div>
+                        <div class="dashboard__summary-container">
+                            <div class="dashboard__summary-title">Average price</div>
+      <div class="dashboard__summary-wrap">
+                                <div class="dashboard__summary-number">367K</div>
+                                <div class="dashboard__summary-chip">+11.01%</div>
+                            </div>
+                        </div>
+                        <div class="dashboard__summary-container">
+                            <div class="dashboard__summary-title">Deals completed</div>
+                         <div class="dashboard__summary-wrap">
+                                <div class="dashboard__summary-number">367K</div>
+                                <div class="dashboard__summary-chip">+11.01%</div>
+                            </div>
+                        </div>
+                        <div class="dashboard__summary-container">
+                            <div class="dashboard__summary-title">Amount invested</div>
+                            <div class="dashboard__summary-wrap">
+                                <div class="dashboard__summary-number">367K</div>
+                                <div class="dashboard__summary-chip">+11.01%</div>
+                            </div>
+                        </div>
+                    </div>
+                  <div class="dashboard__chart-wrapper">
+                    <div class="dashboard__bar-chart">
+                        <canvas id="barChart"></canvas>
+                    </div>
+                    <div class="dashboard__line-chart">
+                        <canvas id="lineChart"></canvas>
+                    </div>
+                  </div>
+                    <div class="dashboard__recent">
+                        <table class="dashboard__recent-table">
+                            <thead>
+                                <tr>
+                                    <th>Property</th>
+                                    <th>Location</th>
+                                    <th>Status</th>
+                                    <th>Price</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Sunset Villa</td>
+                                    <td>Barcelona</td>
+                                    <td>Sold</td>
+                                    <td>$1,200,000</td>
+                                    <td>2024-05-01</td>
+                                </tr>
+                                <tr>
+                                    <td>Oceanview Apt</td>
+                                    <td>Lisbon</td>
+                                    <td>Available</td>
+                                    <td>$850,000</td>
+                                    <td>2024-04-28</td>
+                                </tr>
+                                <tr>
+                                    <td>Central Loft</td>
+                                    <td>Berlin</td>
+                                    <td>Pending</td>
+                                    <td>$950,000</td>
+                                    <td>2024-04-25</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="dashboard__right">
+                    <div class="dashboard__profile-card">
+                        <div class="dashboard__profile-header">
+                            <img src="assets/images/avatar.jpg" alt="User Avatar" class="dashboard__profile-avatar">
+                            <div class="dashboard__profile-info">
+                                <div class="dashboard__profile-name">Cornelius Greenfelder</div>
+                                <div class="dashboard__profile-rating">
+                                    <span class="dashboard__profile-star"><i class="fa fa-star"></i> 4.2</span>
+                                    <span class="dashboard__profile-reviews">(17 reviews)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard__profile-details">
+                            <div><span>Phone</span> <span>0428093467</span></div>
+                            <div><span>Location</span> <span>United States, New York</span></div>
+                            <div><span>Joined platform</span> <span>6 Dec 2020</span></div>
+                            <div><span>Total Investments</span> <span>$1,201,458 <span class="dashboard__profile-badge">+1.6%</span></span></div>
+                        </div>
+                    </div>
+                    <div class="dashboard__properties-card">
+                        <div class="dashboard__properties-header">
+                            <span>My Properties</span>
+                            <button class="dashboard__add-property">+ Add Property</button>
+                        </div>
+                        <ul class="dashboard__properties-list">
+                            <li class="dashboard__property-item">
+                                <img src="assets/images/avatar.jpg" class="dashboard__property-img" alt="Cedarwood Estates">
+                                <div class="dashboard__property-info">
+                                    <div class="dashboard__property-title">Cedarwood Estates</div>
+                                    <div class="dashboard__property-meta">
+                                        <span class="dashboard__property-badge dashboard__property-badge--up">+48%</span>
+                                        <span class="dashboard__property-price">$200,000</span>
+                                        <span class="dashboard__property-rent">$3880</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dashboard__property-item">
+                                <img src="assets/images/avatar.jpg" class="dashboard__property-img" alt="Lakeview Lofts">
+                                <div class="dashboard__property-info">
+                                    <div class="dashboard__property-title">Lakeview Lofts</div>
+                                    <div class="dashboard__property-meta">
+                                        <span class="dashboard__property-badge dashboard__property-badge--up">+25%</span>
+                                        <span class="dashboard__property-price">$250,000</span>
+                                        <span class="dashboard__property-rent">$1400</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dashboard__property-item">
+                                <img src="assets/images/avatar.jpg" class="dashboard__property-img" alt="Tranquil Oaks">
+                                <div class="dashboard__property-info">
+                                    <div class="dashboard__property-title">Tranquil Oaks</div>
+                                    <div class="dashboard__property-meta">
+                                        <span class="dashboard__property-badge dashboard__property-badge--down">-12%</span>
+                                        <span class="dashboard__property-price">$350,000</span>
+                                        <span class="dashboard__property-rent">$1800</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Add more properties as needed -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="assets/barChart.js"></script>
+      <script src="assets/lineChart.js"></script>
+      <script src="assets/pieChart.js"></script>
+</body>
+
+</html>
